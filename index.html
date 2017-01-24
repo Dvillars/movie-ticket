@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
+  <script type="text/javascript" src='js/scripts.js'></script>
+  <title>Movie Tickets</title>
+</head>
+<body>
+  <div class="container bg-success">
+    <div class="jumbotron">
+      <h1>Movie Tickets</h1>
+    </div>
+    <form id='movie-price'>
+      <label for="movie-name"></label>
+      <select id="movie-name" class='btn'>
+        <option value="pd">Patriots Day</option>
+        <option value="xxx">XXX</option>
+        <option value="re">Resident Evil</option>
+        <option value="fd">Finding Dory</option>
+        <option value="mt">Monster Trucks</option>
+        <option value="jp">Jurassic Park</option>
+      </select>
+      <label for="time-of-day"></label>
+      <select id='time-of-day' class='btn'>
+        <option value="Before 4pm">Before 4pm</option>
+        <option value="After 4pm">After 4pm</option>
+      </select>
+      <label for="age"></label>
+      <select id='age' class='btn'>
+        <option value="child">Child | 12 and Under</option>
+        <option value="adult">Adult | 13-61</option>
+        <option value="senior">Senior | 62 and Over</option>
+      </select>
+      <button type="submit" class="btn">Price Me!!!</button>
+    </form>
+    <div id="result">
+
+    </div>
+  </div>
+</body>
+</html>
