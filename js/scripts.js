@@ -10,7 +10,16 @@ function calc(movieName, timeOfDay, age) {
     finalPrice += 3;
   } else {
     console.log('cheap1');
+  } if (timeOfDay === "after 4pm") {
+    finalPrice += 2;
+  } else {
+    console.log('cheap2');
+  } if (age === "adult"){
+    finalPrice += 3;
+  } else {
+    console.log('cheap2');
   }
+
   return finalPrice;
 };
 // Contact.prototype.fullName = function() {
