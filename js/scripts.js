@@ -5,19 +5,25 @@ function Movie(movieName, timeOfDay, age) {
 }
 
 function calc(movieName, timeOfDay, age) {
+
   var finalPrice = 6;
-  if (movieName === 'pd' || movieName === 'xxx' || movieName === 're' || movieName === 'mt') {
+
+  if (movieName === 'Patriots Day' || movieName === 'XXX' || movieName === 'Resident Evil' || movieName === 'Monster Trucks') {
     finalPrice += 3;
   } else {
     console.log('cheap1');
-  } if (timeOfDay === "after 4pm") {
+  }
+
+  if (timeOfDay === "after 4pm") {
     finalPrice += 2;
   } else {
     console.log('cheap2');
-  } if (age === "adult"){
+  }
+
+  if (age === "an adult"){
     finalPrice += 3;
   } else {
-    console.log('cheap2');
+    console.log('cheap3');
   }
 
   return finalPrice;
@@ -37,12 +43,13 @@ $(document).ready(function(){
 
     $('#result').append("<span>The price of " +
       newState.movieName +
-      " at " +
+      " " +
       newState.timeOfDay +
-      " for a " +
+      " for " +
       newState.age +
       " is " +
-      calc(movieName, timeOfDay, age) +
+      calc(newState.movieName, newState.timeOfDay, newState.age) +
+      " dollars" +
      "</span>")
   });
 });
